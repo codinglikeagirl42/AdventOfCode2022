@@ -5003,6 +5003,15 @@ myself = (
   3,
 )
 
+"""
+Logic Part 1:
+win -    A Y, B Z, C X
+         1 2, 2 3, 3 1
+lose -   A Z, B X, C Y
+         1 3, 2 1, 3 2
+draw -   A X, B Y, C Z
+         1 1, 2 2, 3 3
+"""
 
 elf_sum = sum(elf)
 my_sum = sum(myself)
@@ -5021,6 +5030,22 @@ for i in range(len(elf)):
       my_score += 6
 
 print(f" Part 1: {my_score}")
+
+"""
+Logic Part 2:
+myself:
+
+x - lose - 1 
+   A - Z -> 3 added to my_score
+   B - X -> 1 added to my_score
+   C - Y -> 2 added to my_score
+y - draw - 2
+   my_score + 3 and + elf
+z - win  - 3
+   A - Y -> 2 + 6 added to my_score
+   B - Z -> 3 + 6 added to my_score
+   C - X -> 1 + 6 added to my_score
+"""
 
 my_score = 0
 
