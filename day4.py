@@ -1018,6 +1018,7 @@ import re
 
 job_assignments = ""
 double_work = 0
+overlap_work = 0
 
 for assignments in data:
    # split string by , and - 
@@ -1026,7 +1027,13 @@ for assignments in data:
    y = int(job_ranges[1])
    a = int(job_ranges[2])
    b = int(job_ranges[3])
+
+   # check if one job of the pair is contained in the other
    if (x <= a and y >= b) or (a <= x and b >= y):
       double_work += 1
+   # check to see if the job pairs overlap   
+   if (x <= a and y >= b) or (a <= x and b >= y) or (y>=a and x<=b):
+      overlap_work += 1
 
 print(f"Part 1: {double_work}")
+print(f"Part 2: {overlap_work}")
