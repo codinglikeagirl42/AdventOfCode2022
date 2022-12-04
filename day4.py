@@ -1016,7 +1016,6 @@ data = (
 # split string with 2 delimiters with re
 import re
 
-job_assignments = ""
 double_work = 0
 overlap_work = 0
 
