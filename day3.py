@@ -1,3 +1,7 @@
+# advent of code https://adventofcode.com/2022
+# Day 3
+
+
 test_data = ("vJrwpWtwJgWrhcsFMMfFFhFp",
         "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
         "PmmdzqPrVvPwwTWBwg",
