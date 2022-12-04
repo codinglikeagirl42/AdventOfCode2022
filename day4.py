@@ -1031,7 +1031,7 @@ for assignments in data:
    if (x <= a and y >= b) or (a <= x and b >= y):
       double_work += 1
    # check to see if the job pairs overlap   
-   if (x <= a and y >= b) or (a <= x and b >= y) or (y>=a and x<=b):
+   if (y>=a and x<=b):
       overlap_work += 1
 
 print(f"Part 1: {double_work}")
