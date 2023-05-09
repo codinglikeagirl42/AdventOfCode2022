@@ -1,5 +1,5 @@
 #Get data from text file
-data = open("Day8/test.txt", "r").read().split("\n")
+data = open("Day8/day8.txt", "r").read().split("\n")
 trees_visable = 0
 
 # get the outsitd visible trees form data grid, top and bottom
