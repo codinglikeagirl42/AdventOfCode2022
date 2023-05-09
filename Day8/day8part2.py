@@ -1,10 +1,6 @@
 #Get data from text file
 data = open("Day8/day8.txt", "r").read().split("\n")
 
-x_total = len(data)
-y_total = len(data[0])
-
-
 def left_top_view(left_top):
   # how many trees can you see for tree
   view = 0

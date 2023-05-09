@@ -5,6 +5,7 @@
 data = open("Day8/day8.txt", "r").read().split("\n")
 trees_visable = 0
 
+#total rows and columns
 x_total = len(data)
 y_total = len(data[0])
 
